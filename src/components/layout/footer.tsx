@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
-            <h3 className="font-headline text-2xl text-primary">Les Artistes</h3>
+            <h3 className="font-montserrat text-2xl font-bold text-primary">Les Artistes</h3>
             <p className="mt-2 text-foreground/70">L'élégance au bout des ciseaux.</p>
           </div>
           <div>
@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-bold text-lg text-foreground">Nos partenaires</h4>
-            <div className="mt-2 flex justify-center md:justify-start">
+            <div className="mt-2 flex items-center justify-center md:justify-start h-10">
               <a 
                 href="https://www.planity.com/les-artistes-59000-lille" 
                 target="_blank" 
