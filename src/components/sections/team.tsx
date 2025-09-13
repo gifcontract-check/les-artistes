@@ -3,11 +3,12 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Team() {
   const younesImage = PlaceHolderImages.find(p => p.id === 'younes-portrait');
+  const khudurImage = PlaceHolderImages.find(p => p.id === 'khudur-portrait');
   const yacineImage = PlaceHolderImages.find(p => p.id === 'yacine-portrait');
 
   const teamMembers = [
     {
-      name: 'Younes Khudur',
+      name: 'Younes',
       description: 'Maître coiffeur et artiste dans l\'âme, Younes transforme chaque coupe en une signature de style unique. Sa précision et sa créativité sont la pierre angulaire de notre salon.',
       image: younesImage,
     },
@@ -16,6 +17,11 @@ export default function Team() {
       description: 'Spécialiste de la barbe et des techniques de coiffure modernes, Yacine allie savoir-faire traditionnel et tendances actuelles. Son expertise garantit un résultat impeccable et personnalisé.',
       image: yacineImage,
     },
+    {
+      name: 'Khudur',
+      description: 'Expert en techniques de coloration et en soins capillaires, Khudur apporte une touche de créativité et de technicité pour sublimer chaque chevelure et répondre à toutes vos envies.',
+      image: khudurImage,
+    }
   ];
 
   return (
@@ -29,7 +35,7 @@ export default function Team() {
             Des artisans passionnés au service de votre style.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 justify-center">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-12 justify-center">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center text-center">
               {member.image && (

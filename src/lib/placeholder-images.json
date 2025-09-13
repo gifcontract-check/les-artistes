@@ -8,7 +8,7 @@
     },
     {
       "id": "younes-portrait",
-      "description": "Portrait de Younes Khudur",
+      "description": "Portrait de Younes",
       "imageUrl": "https://picsum.photos/seed/younes/400/400",
       "imageHint": "male portrait"
     },
@@ -16,6 +16,12 @@
       "id": "yacine-portrait",
       "description": "Portrait de Yacine",
       "imageUrl": "https://picsum.photos/seed/yacine/400/400",
+      "imageHint": "male portrait"
+    },
+    {
+      "id": "khudur-portrait",
+      "description": "Portrait de Khudur",
+      "imageUrl": "https://picsum.photos/seed/khudur/400/400",
       "imageHint": "male portrait"
     }
   ]
