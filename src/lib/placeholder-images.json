@@ -3,8 +3,8 @@
     {
       "id": "hero-banner",
       "description": "Ambiance chic d'un salon de coiffure",
-      "imageUrl": "https://picsum.photos/seed/lesartistes/1920/1080",
-      "imageHint": "salon interior"
+      "imageUrl": "https://picsum.photos/seed/hairsalon/1920/1080",
+      "imageHint": "hair salon"
     }
   ]
 }
