@@ -5,7 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ThemeSwitcher } from "@/components/theme-switcher";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Header() {
@@ -47,8 +47,8 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
-        hasScrolled ? "bg-background/90 backdrop-blur-sm" : "bg-transparent text-white"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        hasScrolled ? "bg-background/90 backdrop-blur-sm shadow-sm" : "bg-transparent text-white"
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
@@ -64,11 +64,11 @@ export default function Header() {
               Réserver
             </a>
           </Button>
-          <ThemeSwitcher />
+          <ThemeSwitcher hasScrolled={hasScrolled} />
           <div className="md:hidden">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className={cn(hasScrolled ? "" : "text-white hover:bg-white/10 hover:text-white")}>
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
