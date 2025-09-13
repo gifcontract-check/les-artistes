@@ -1,7 +1,7 @@
 export default function Presentation() {
   return (
     <section id="presentation" className="relative py-20 md:py-32 bg-background overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-20">
+      <div className="absolute inset-0 z-0 opacity-40 dark:opacity-20">
         <video
           className="w-full h-full object-cover"
           autoPlay
@@ -14,7 +14,7 @@ export default function Presentation() {
         >
           Votre navigateur ne supporte pas les vidéos.
         </video>
-        <div className="absolute inset-0 bg-background/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       </div>
       <div className="relative z-10 container mx-auto px-4 md:px-6 text-center max-w-3xl">
         <h2 className="text-4xl md:text-5xl font-bold text-primary">
