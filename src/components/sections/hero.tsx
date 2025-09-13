@@ -2,8 +2,21 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-screen w-full flex items-center justify-center text-center overflow-hidden bg-black">
-      <div className="relative z-10 px-4 animate-fade-in text-white" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
+    <section id="home" className="relative h-screen w-full flex items-center justify-center text-center overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-40 dark:opacity-20">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          src="https://videos.pexels.com/video-files/5938340/5938340-hd_1920_1080_25fps.mp4" 
+        >
+          Votre navigateur ne supporte pas les vidéos.
+        </video>
+        <div className="absolute inset-0 bg-black/50"></div>
+      </div>
+      <div className="relative z-10 px-4 animate-fade-in text-white" style={{ animationDelay: '0.s', animationFillMode: 'both' }}>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-montserrat">
           LES ARTISTES LILLE
         </h1>
