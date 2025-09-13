@@ -12,14 +12,16 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground">
       <Header />
-      <main>
+      <main className="relative">
         <Hero />
-        <Presentation />
-        <Services />
-        <Team />
-        <Testimonials />
-        <Faq />
-        <Contact />
+        <div className="relative z-10 bg-background">
+          <Presentation />
+          <Services />
+          <Team />
+          <Testimonials />
+          <Faq />
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>

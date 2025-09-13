@@ -5,9 +5,12 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Header() {
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,32 +20,65 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinks = [
+    { href: "#presentation", label: "Présentation" },
+    { href: "#services", label: "Services" },
+    { href: "#team", label: "L'équipe" },
+    { href: "#testimonials", label: "Avis" },
+    { href: "#faq", label: "FAQ" },
+    { href: "#contact", label: "Contact" },
+  ];
+
+  const NavContent = () => (
+    <>
+      {navLinks.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          onClick={() => setIsMenuOpen(false)}
+          className="hover:text-primary transition-colors text-lg md:text-sm"
+        >
+          {link.label}
+        </Link>
+      ))}
+    </>
+  );
+
   return (
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
-        hasScrolled ? "bg-background/80 backdrop-blur-sm" : "bg-transparent"
+        hasScrolled ? "bg-background/90 backdrop-blur-sm" : "bg-transparent text-white"
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="font-bold text-2xl text-primary">
+        <Link href="/" className={cn("font-bold text-2xl font-montserrat", hasScrolled ? "text-primary" : "text-white")}>
           Les Artistes
         </Link>
         <nav className="hidden items-center space-x-6 md:flex">
-          <Link href="#presentation" className="hover:text-primary transition-colors">Présentation</Link>
-          <Link href="#services" className="hover:text-primary transition-colors">Services</Link>
-          <Link href="#team" className="hover:text-primary transition-colors">L'équipe</Link>
-          <Link href="#testimonials" className="hover:text-primary transition-colors">Avis</Link>
-          <Link href="#faq" className="hover:text-primary transition-colors">FAQ</Link>
-          <Link href="#contact" className="hover:text-primary transition-colors">Contact</Link>
+          <NavContent />
         </nav>
-        <div className="flex items-center gap-4">
-          <Button asChild>
+        <div className="flex items-center gap-2">
+          <Button asChild className={cn(hasScrolled ? "" : "bg-white text-primary hover:bg-white/90")}>
             <a href="https://www.planity.com/les-artistes-59000-lille" target="_blank" rel="noopener noreferrer">
-              Réserver maintenant
+              Réserver
             </a>
           </Button>
           <ThemeSwitcher />
+          <div className="md:hidden">
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[80vw]">
+                <nav className="flex flex-col items-center justify-center h-full space-y-8">
+                  <NavContent />
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
