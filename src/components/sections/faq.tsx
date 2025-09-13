@@ -19,8 +19,8 @@ const faqItems = [
     answer: "La durée varie en fonction du service. Une coupe homme classique dure environ 30 minutes, tandis qu'une prestation technique comme une couleur ou une décoloration peut prendre plusieurs heures. N'hésitez pas à nous demander une estimation lors de la prise de rendez-vous."
   },
   {
-    question: "Proposez-vous des cartes cadeaux ?",
-    answer: "Absolument ! Nous proposons des cartes cadeaux du montant de votre choix. C'est le cadeau idéal pour faire plaisir à vos proches. Venez directement au salon pour en obtenir une."
+    question: "Quels moyens de paiement acceptez-vous ?",
+    answer: "Nous acceptons les paiements par carte bancaire et en espèces directement au salon."
   },
 ];
 
