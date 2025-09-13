@@ -21,7 +21,7 @@ export default function Footer() {
             <h4 className="font-bold text-lg text-foreground">Nos partenaires</h4>
             <div className="mt-2 flex justify-center md:justify-start">
               <a 
-                href="https://www.planity.com" 
+                href="https://www.planity.com/les-artistes-59000-lille" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="Planity"
