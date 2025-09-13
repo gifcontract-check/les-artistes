@@ -34,7 +34,7 @@ export default function Services() {
     <section id="services" className="py-20 md:py-32 bg-background/95">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary">
               Nos Prestations
             </h2>
             <p className="mt-4 text-lg text-foreground/80">
@@ -46,7 +46,7 @@ export default function Services() {
             <Card key={index} className="bg-background border-primary/20 text-center flex flex-col items-center p-8 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
               <CardHeader>
                 {service.icon}
-                <CardTitle className="mt-4 text-2xl font-headline text-foreground">{service.title}</CardTitle>
+                <CardTitle className="mt-4 text-2xl font-bold text-foreground">{service.title}</CardTitle>
               </CardHeader>
               <CardDescription className="text-foreground/70">
                 {service.description}

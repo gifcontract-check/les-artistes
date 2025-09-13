@@ -24,7 +24,7 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="font-headline text-2xl font-bold text-primary">
+        <Link href="/" className="font-bold text-2xl text-primary">
           Les Artistes
         </Link>
         <nav className="hidden items-center space-x-6 md:flex">

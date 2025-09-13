@@ -19,7 +19,7 @@ export default function Hero() {
       )}
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 px-4 text-white animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
-        <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold text-foreground">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground">
           Salon de coiffure Les Artistes
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-foreground/80">

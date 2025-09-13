@@ -2,7 +2,7 @@ export default function Presentation() {
   return (
     <section id="presentation" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
-        <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">
+        <h2 className="text-4xl md:text-5xl font-bold text-primary">
           L'Art de la Coiffure
         </h2>
         <div className="mt-8 text-lg text-foreground/80 space-y-6">
