@@ -37,8 +37,9 @@ export default function Testimonials() {
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div>
-                    <p className="font-bold text-foreground">{testimonial.name}</p>
-                    <div className="flex items-center">
+                    <p className="font-bold text-foreground">{`${testimonial.name.charAt(0)}. ${testimonial.name.split(' ')[1]}`}</p>
+                    <p className="text-sm text-foreground/70">{testimonial.email}</p>
+                    <div className="flex items-center mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 text-primary fill-primary" />
                       ))}
