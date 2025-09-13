@@ -25,7 +25,7 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="Planity"
-                className="text-2xl font-bold text-foreground/80 hover:text-primary transition-colors"
+                className="font-montserrat text-2xl font-bold tracking-wider text-foreground/80 hover:text-primary transition-colors"
               >
                 PLANITY
               </a>
