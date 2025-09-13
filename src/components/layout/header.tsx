@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 export default function Header() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -34,11 +35,14 @@ export default function Header() {
           <Link href="#testimonials" className="hover:text-primary transition-colors">Avis</Link>
           <Link href="#contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
-        <Button asChild>
-          <a href="https://www.planity.com/les-artistes-59000-lille" target="_blank" rel="noopener noreferrer">
-            Réserver maintenant
-          </a>
-        </Button>
+        <div className="flex items-center gap-4">
+          <Button asChild>
+            <a href="https://www.planity.com/les-artistes-59000-lille" target="_blank" rel="noopener noreferrer">
+              Réserver maintenant
+            </a>
+          </Button>
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
   );
