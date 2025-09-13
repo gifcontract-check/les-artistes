@@ -31,6 +31,7 @@ export default function Header() {
           <Link href="#presentation" className="hover:text-primary transition-colors">Présentation</Link>
           <Link href="#services" className="hover:text-primary transition-colors">Services</Link>
           <Link href="#team" className="hover:text-primary transition-colors">L'équipe</Link>
+          <Link href="#testimonials" className="hover:text-primary transition-colors">Avis</Link>
           <Link href="#contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
         <Button asChild>
