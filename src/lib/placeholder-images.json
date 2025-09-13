@@ -5,6 +5,18 @@
       "description": "Ambiance chic d'un salon de coiffure",
       "imageUrl": "https://picsum.photos/seed/hairsalon/1920/1080",
       "imageHint": "hair salon"
+    },
+    {
+      "id": "younes-portrait",
+      "description": "Portrait de Younes Khudur",
+      "imageUrl": "https://picsum.photos/seed/younes/400/400",
+      "imageHint": "male portrait"
+    },
+    {
+      "id": "yacine-portrait",
+      "description": "Portrait de Yacine",
+      "imageUrl": "https://picsum.photos/seed/yacine/400/400",
+      "imageHint": "male portrait"
     }
   ]
 }
