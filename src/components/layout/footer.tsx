@@ -18,7 +18,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-lg text-foreground">Nos partenaires</h4>
+            <h4 className="font-bold text-lg text-foreground">Notre partenaire</h4>
             <div className="mt-2 flex items-center justify-center md:justify-start h-10">
               <a 
                 href="https://www.planity.com/les-artistes-59000-lille" 
