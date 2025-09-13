@@ -10,7 +10,7 @@ export default function Hero() {
           loop
           muted
           playsInline
-          src="/salon-video.mp4" 
+          src="/Video site XVI barber.mov" 
         >
           Votre navigateur ne supporte pas les vidéos.
         </video>
