@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-banner",
-      "description": "Ambiance chic d'un salon de coiffure",
-      "imageUrl": "https://picsum.photos/seed/hairsalon/1920/1080",
-      "imageHint": "hair salon"
+      "description": "Ciseaux et peigne de coiffeur",
+      "imageUrl": "https://picsum.photos/seed/scissors/1920/1080",
+      "imageHint": "scissors comb"
     },
     {
       "id": "younes-portrait",
