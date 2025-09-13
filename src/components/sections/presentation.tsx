@@ -1,7 +1,22 @@
 export default function Presentation() {
   return (
-    <section id="presentation" className="py-20 md:py-32 bg-background">
-      <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
+    <section id="presentation" className="relative py-20 md:py-32 bg-background overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-20">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          // IMPORTANT: Remplacez cette URL par le lien vers votre propre vidéo.
+          // Vous pouvez héberger une vidéo sur un service comme Cloudinary, Vimeo, etc.
+          src="https://videos.pexels.com/video-files/5938340/5938340-hd_1920_1080_25fps.mp4" 
+        >
+          Votre navigateur ne supporte pas les vidéos.
+        </video>
+        <div className="absolute inset-0 bg-background/50"></div>
+      </div>
+      <div className="relative z-10 container mx-auto px-4 md:px-6 text-center max-w-3xl">
         <h2 className="text-4xl md:text-5xl font-bold text-primary">
           Qui nous sommes ?
         </h2>
