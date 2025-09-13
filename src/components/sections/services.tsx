@@ -26,10 +26,13 @@ const servicesCategories = {
         strokeLinejoin="round"
         className="text-primary"
       >
-        <path d="M16 17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h1.5a1.5 1.5 0 0 0 0-3H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1" />
-        <path d="M18 13h-2" />
-        <path d="M22 8h-4" />
-        <path d="M20 18h-4" />
+        <path d="M20 5h-3.4a1 1 0 0 0-1 .8l-2.1 6.8c-.2.6-.8 1-1.4 1H8" />
+        <path d="M6 5H4c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h2" />
+        <path d="M16 5h2a2 2 0 0 1 2 2v2c0 1.1-.9 2-2 2h-2" />
+        <path d="M6 13h4" />
+        <path d="M6 17h10" />
+        <path d="m18 17 2 2" />
+        <path d="m5 8 1-1" />
       </svg>
     ),
     items: [
