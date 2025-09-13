@@ -1,33 +1,52 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Scissors, Brush, Sparkles, Droplets, Wind } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Scissors, Sparkles } from "lucide-react";
 
-const services = [
-  {
-    icon: <Scissors className="h-10 w-10 text-primary" />,
-    title: "Coupe & Coiffage",
-    description: "Coupes sur mesure pour femmes, hommes et enfants, adaptées à votre style."
+const servicesCategories = {
+  "Coiffure Homme": {
+    icon: <Scissors className="h-8 w-8 text-primary" />,
+    items: [
+      "Dégradé classique",
+      "Dégradé progressif",
+      "Classic cut \"taper\"/cut espagnol",
+      "Shampoing + coupe + coiffage",
+      "Coupe enfant -12 ans"
+    ]
   },
-  {
-    icon: <Brush className="h-10 w-10 text-primary" />,
-    title: "Coloration & Mèches",
-    description: "Techniques de coloration innovantes pour un résultat naturel et lumineux."
+  "Barbe": {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-primary"
+      >
+        <path d="M16 17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h1.5a1.5 1.5 0 0 0 0-3H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1" />
+        <path d="M18 13h-2" />
+        <path d="M22 8h-4" />
+        <path d="M20 18h-4" />
+      </svg>
+    ),
+    items: [
+      "Taille de barbe sculptée + dégradé tondeuse + traçage",
+      "Rasage à l'ancienne"
+    ]
   },
-  {
-    icon: <Wind className="h-10 w-10 text-primary" />,
-    title: "Brushing",
-    description: "Mise en forme parfaite pour toutes les occasions, du lisse au bouclé."
-  },
-  {
-    icon: <Droplets className="h-10 w-10 text-primary" />,
-    title: "Soins Capillaires",
-    description: "Rituels de soins profonds pour revitaliser et sublimer vos cheveux."
-  },
-  {
-    icon: <Sparkles className="h-10 w-10 text-primary" />,
-    title: "Coiffures d'Exception",
-    description: "Chignons, tresses et coiffures de cérémonie pour vos grands événements."
-  },
-];
+  "Technique": {
+    icon: <Sparkles className="h-8 w-8 text-primary" />,
+    items: [
+      "Epilation au fil",
+      "Coloration blanc homme",
+      "Décoloration + patine",
+      "Coloration gris homme"
+    ]
+  }
+};
 
 export default function Services() {
   return (
@@ -41,16 +60,20 @@ export default function Services() {
               Découvrez notre gamme de services conçus pour répondre à toutes vos envies.
             </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <Card key={index} className="bg-background border-primary/20 text-center flex flex-col items-center p-8 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
-              <CardHeader>
-                {service.icon}
-                <CardTitle className="mt-4 text-2xl font-bold text-foreground">{service.title}</CardTitle>
+        <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3">
+          {Object.entries(servicesCategories).map(([category, details]) => (
+            <Card key={category} className="bg-background border-primary/20 text-center flex flex-col p-8">
+              <CardHeader className="flex-row items-center justify-center gap-4">
+                <CardTitle className="text-2xl font-bold text-foreground">{category}</CardTitle>
+                {details.icon}
               </CardHeader>
-              <CardDescription className="text-foreground/70">
-                {service.description}
-              </CardDescription>
+              <CardContent>
+                <ul className="space-y-3 text-foreground/70">
+                  {details.items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </CardContent>
             </Card>
           ))}
         </div>
