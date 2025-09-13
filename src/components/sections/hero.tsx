@@ -15,8 +15,6 @@ export default function Hero() {
           className="object-cover"
           priority
           data-ai-hint={heroImage.imageHint}
-          width={1920}
-          height={1080}
         />
       )}
       <div className="absolute inset-0 bg-black/70" />
