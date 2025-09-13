@@ -27,7 +27,7 @@ export default function Footer() {
                 aria-label="Planity"
                 className="text-2xl font-bold text-foreground/80 hover:text-primary transition-colors"
               >
-                Planity
+                PLANITY
               </a>
             </div>
           </div>
