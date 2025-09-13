@@ -10,7 +10,7 @@ export default function Hero() {
           loop
           muted
           playsInline
-          src="https://videos.pexels.com/video-files/5938340/5938340-hd_1920_1080_25fps.mp4" 
+          src="/salon-video.mp4" 
         >
           Votre navigateur ne supporte pas les vidéos.
         </video>
