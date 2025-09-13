@@ -33,6 +33,7 @@ export default function Header() {
           <Link href="#services" className="hover:text-primary transition-colors">Services</Link>
           <Link href="#team" className="hover:text-primary transition-colors">L'équipe</Link>
           <Link href="#testimonials" className="hover:text-primary transition-colors">Avis</Link>
+          <Link href="#faq" className="hover:text-primary transition-colors">FAQ</Link>
           <Link href="#contact" className="hover:text-primary transition-colors">Contact</Link>
         </nav>
         <div className="flex items-center gap-4">
