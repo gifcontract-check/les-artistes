@@ -8,6 +8,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 const testimonials = [
@@ -101,6 +103,8 @@ export default function Testimonials() {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 fill-black" />
+            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 fill-black" />
           </Carousel>
         </div>
       </div>
