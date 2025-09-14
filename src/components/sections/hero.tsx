@@ -12,7 +12,7 @@ export default function Hero() {
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-white/90">
           Créativité, expertise et élégance au service de votre beauté.
         </p>
-        <Button asChild size="lg" className="mt-8 bg-white text-primary hover:bg-white/90">
+        <Button asChild size="lg" className="mt-8 bg-white text-black hover:bg-white/90 dark:text-black">
           <a href="https://www.planity.com/les-artistes-59000-lille" target="_blank" rel="noopener noreferrer">
             Réserver maintenant
           </a>
