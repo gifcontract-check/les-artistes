@@ -7,6 +7,7 @@ import Testimonials from "@/components/sections/testimonials";
 import Faq from "@/components/sections/faq";
 import Contact from "@/components/sections/contact";
 import Footer from "@/components/layout/footer";
+import StyleAdvisor from "@/components/sections/style-advisor";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <Services />
           <Team />
           <Testimonials />
+          <StyleAdvisor />
           <Faq />
           <Contact />
         </div>
