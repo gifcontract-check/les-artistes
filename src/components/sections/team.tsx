@@ -3,7 +3,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Team() {
   const younesImage = PlaceHolderImages.find(p => p.id === 'younes-portrait');
-  const khudurImage = PlaceHolderImages.find(p => p.id === 'khudur-portrait');
+  const khudhurImage = PlaceHolderImages.find(p => p.id === 'khudhur-portrait');
   const yacineImage = PlaceHolderImages.find(p => p.id === 'yacine-portrait');
 
   const teamMembers = [
@@ -18,9 +18,9 @@ export default function Team() {
       image: yacineImage,
     },
     {
-      name: 'Khudur',
-      description: 'Expert en techniques de coloration et en soins capillaires, Khudur apporte une touche de créativité et de technicité pour sublimer chaque chevelure et répondre à toutes vos envies.',
-      image: khudurImage,
+      name: 'Khudhur',
+      description: 'Expert en techniques de coloration et en soins capillaires, Khudhur apporte une touche de créativité et de technicité pour sublimer chaque chevelure et répondre à toutes vos envies.',
+      image: khudhurImage,
     }
   ];
 

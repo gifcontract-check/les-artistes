@@ -19,9 +19,9 @@
       "imageHint": "male portrait"
     },
     {
-      "id": "khudur-portrait",
-      "description": "Portrait de Khudur",
-      "imageUrl": "https://picsum.photos/seed/khudur/400/400",
+      "id": "khudhur-portrait",
+      "description": "Portrait de Khudhur",
+      "imageUrl": "https://picsum.photos/seed/khudhur/400/400",
       "imageHint": "male portrait"
     }
   ]
