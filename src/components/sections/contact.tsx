@@ -1,5 +1,4 @@
 import { MapPin, Phone, Clock } from "lucide-react";
-import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -14,7 +13,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="mt-12 max-w-lg mx-auto">
           <div className="space-y-8">
             <div className="flex items-start gap-4">
               <MapPin className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
@@ -38,17 +37,6 @@ export default function Contact() {
                 <p className="text-foreground/80">10h00 - 19h00</p>
               </div>
             </div>
-          </div>
-          
-          <div className="h-[400px] lg:h-[500px] w-full rounded-lg overflow-hidden border-2 border-primary/20">
-            <Image 
-              src="https://picsum.photos/seed/salon-interior/800/600"
-              alt="Intérieur du salon de coiffure"
-              width={800}
-              height={600}
-              className="w-full h-full object-cover"
-              data-ai-hint="salon interior"
-            />
           </div>
         </div>
       </div>
