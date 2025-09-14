@@ -1,5 +1,5 @@
 import { MapPin, Phone, Clock } from "lucide-react";
-import Map from "@/components/map";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -41,7 +41,14 @@ export default function Contact() {
           </div>
           
           <div className="h-[400px] lg:h-[500px] w-full rounded-lg overflow-hidden border-2 border-primary/20">
-            <Map />
+            <Image 
+              src="https://picsum.photos/seed/salon-interior/800/600"
+              alt="Intérieur du salon de coiffure"
+              width={800}
+              height={600}
+              className="w-full h-full object-cover"
+              data-ai-hint="salon interior"
+            />
           </div>
         </div>
       </div>
