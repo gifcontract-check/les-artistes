@@ -1,0 +1,101 @@
+OrderID,Date,Product,Category,Price,Quantity,TotalPrice
+1,2023-10-27,Shampooing "Hydratation Intense",Soin des cheveux,25.50,2,51.00
+2,2023-11-15,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+3,2024-01-05,Cire coiffante "Effet Mat",Coiffage,15.75,3,47.25
+4,2024-02-20,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+5,2024-03-12,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+6,2024-04-01,Coloration "Gris Argenté",Technique,45.00,1,45.00
+7,2024-05-22,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+8,2023-12-08,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+9,2024-06-19,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,2,36.00
+10,2024-07-03,Cire coiffante "Effet Mat",Coiffage,15.75,1,15.75
+11,2023-11-02,Après-shampooing "Réparation",Soin des cheveux,27.00,2,54.00
+12,2024-01-18,Peigne en bois de poirier,Accessoires,12.50,3,37.50
+13,2024-08-14,Coloration "Gris Argenté",Technique,45.00,1,45.00
+14,2024-09-05,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+15,2023-10-30,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+16,2024-02-11,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+17,2024-03-28,Cire coiffante "Effet Mat",Coiffage,15.75,2,31.50
+18,2024-06-07,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+19,2024-07-21,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+20,2024-08-30,Coloration "Gris Argenté",Technique,45.00,1,45.00
+21,2023-11-25,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+22,2024-01-10,Shampooing "Hydratation Intense",Soin des cheveux,25.50,3,76.50
+23,2024-04-15,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+24,2024-05-09,Cire coiffante "Effet Mat",Coiffage,15.75,1,15.75
+25,2024-09-18,Après-shampooing "Réparation",Soin des cheveux,27.00,2,54.00
+26,2023-12-22,Peigne en bois de poirier,Accessoires,12.50,2,25.00
+27,2024-02-03,Coloration "Gris Argenté",Technique,45.00,1,45.00
+28,2024-06-28,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+29,2024-07-14,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+30,2024-08-08,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+31,2023-10-11,Cire coiffante "Effet Mat",Coiffage,15.75,3,47.25
+32,2024-01-29,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+33,2024-04-25,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+34,2024-09-29,Coloration "Gris Argenté",Technique,45.00,1,45.00
+35,2023-12-14,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+36,2024-03-07,Shampooing "Hydratation Intense",Soin des cheveux,25.50,2,51.00
+37,2024-05-18,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+38,2024-07-29,Cire coiffante "Effet Mat",Coiffage,15.75,1,15.75
+39,2024-08-22,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+40,2023-11-19,Peigne en bois de poirier,Accessoires,12.50,2,25.00
+41,2024-02-28,Coloration "Gris Argenté",Technique,45.00,1,45.00
+42,2024-06-15,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+43,2024-09-11,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+44,2023-10-04,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,3,54.00
+45,2024-01-21,Cire coiffante "Effet Mat",Coiffage,15.75,1,15.75
+46,2024-03-19,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+47,2024-05-01,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+48,2024-08-01,Coloration "Gris Argenté",Technique,45.00,1,45.00
+49,2024-09-22,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+50,2023-12-29,Shampooing "Hydratation Intense",Soin des cheveux,25.50,2,51.00
+51,2024-04-09,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+52,2024-07-09,Cire coiffante "Effet Mat",Coiffage,15.75,2,31.50
+53,2024-08-18,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+54,2023-11-09,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+55,2024-02-19,Coloration "Gris Argenté",Technique,45.00,1,45.00
+56,2024-05-29,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+57,2024-09-01,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+58,2023-10-19,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+59,2024-01-14,Cire coiffante "Effet Mat",Coiffage,15.75,1,15.75
+60,2024-03-11,Après-shampooing "Réparation",Soin des cheveux,27.00,3,81.00
+61,2024-04-21,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+62,2024-07-18,Coloration "Gris Argenté",Technique,45.00,1,45.00
+63,2024-08-11,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+64,2023-12-01,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+65,2024-04-02,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,2,36.00
+66,2024-06-22,Cire coiffante "Effet Mat",Coiffage,15.75,1,15.75
+67,2024-08-04,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+68,2023-11-29,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+69,2024-02-09,Coloration "Gris Argenté",Technique,45.00,1,45.00
+70,2024-05-11,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+71,2024-08-28,Shampooing "Hydratation Intense",Soin des cheveux,25.50,2,51.00
+72,2023-10-22,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+73,2024-01-01,Cire coiffante "Effet Mat",Coiffage,15.75,2,31.50
+74,2024-03-01,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+75,2024-04-11,Peigne en bois de poirier,Accessoires,12.50,3,37.50
+76,2024-07-01,Coloration "Gris Argenté",Technique,45.00,1,45.00
+77,2024-09-15,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+78,2023-12-04,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+79,2024-03-22,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+80,2024-06-11,Cire coiffante "Effet Mat",Coiffage,15.75,1,15.75
+81,2024-08-25,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+82,2023-11-12,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+83,2024-02-22,Coloration "Gris Argenté",Technique,45.00,1,45.00
+84,2024-05-21,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+85,2024-09-08,Shampooing "Hydratation Intense",Soin des cheveux,25.50,2,51.00
+86,2023-10-15,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+87,2024-01-25,Cire coiffante "Effet Mat",Coiffage,15.75,1,15.75
+88,2024-03-25,Après-shampooing "Réparation",Soin des cheveux,27.00,2,54.00
+89,2024-05-05,Peigne en bois de poirier,Accessoires,12.50,1,12.50
+90,2024-08-05,Coloration "Gris Argenté",Technique,45.00,1,45.00
+91,2024-09-25,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+92,2023-12-25,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+93,2024-04-28,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
+94,2024-06-01,Cire coiffante "Effet Mat",Coiffage,15.75,3,47.25
+95,2024-08-15,Après-shampooing "Réparation",Soin des cheveux,27.00,1,27.00
+96,2023-11-22,Peigne en bois de poirier,Accessoires,12.50,2,25.00
+97,2024-02-15,Coloration "Gris Argenté",Technique,45.00,1,45.00
+98,2024-05-15,Rasoir de sûreté "Le Classique",Rasage,35.00,1,35.00
+99,2024-09-12,Shampooing "Hydratation Intense",Soin des cheveux,25.50,1,25.50
+100,2023-10-01,Huile à barbe "Bois de Santal",Soin de la barbe,18.00,1,18.00
