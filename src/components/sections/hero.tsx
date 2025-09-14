@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section id="home" className="relative h-screen w-full flex items-center justify-center text-center overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-40 dark:opacity-20">
+      <div className="absolute inset-0 z-0">
         <video
           className="w-full h-full object-cover"
           autoPlay
@@ -14,7 +14,7 @@ export default function Hero() {
         >
           Votre navigateur ne supporte pas les vidéos.
         </video>
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       <div className="relative z-10 px-4 animate-fade-in text-white" style={{ animationDelay: '0.s', animationFillMode: 'both' }}>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-montserrat">
@@ -23,7 +23,7 @@ export default function Hero() {
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-white/90">
           Créativité, expertise et élégance au service de votre beauté.
         </p>
-        <Button asChild size="lg" className="mt-8">
+        <Button asChild size="lg" className="mt-8 bg-white text-primary hover:bg-white/90">
           <a href="https://www.planity.com/les-artistes-59000-lille" target="_blank" rel="noopener noreferrer">
             Réserver maintenant
           </a>
