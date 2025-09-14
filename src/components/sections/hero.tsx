@@ -1,20 +1,31 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 
 export default function Hero() {
+  const [videoEnabled, setVideoEnabled] = useState(true);
+
   return (
-    <section id="home" className="relative h-screen w-full flex items-center justify-center text-center overflow-hidden">
+    <section id="home" className="relative h-screen w-full flex items-center justify-center text-center overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
-        <video
-          className="w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          src="/Video site XVI barber.mov" 
-        >
-          Votre navigateur ne supporte pas les vidéos.
-        </video>
-        <div className="absolute inset-0 bg-black/30"></div>
+        {videoEnabled && (
+          <>
+            <video
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+              src="/Video site XVI barber.mov" 
+            >
+              Votre navigateur ne supporte pas les vidéos.
+            </video>
+            <div className="absolute inset-0 bg-black/30"></div>
+          </>
+        )}
       </div>
       <div className="relative z-10 px-4 animate-fade-in text-white" style={{ animationDelay: '0.s', animationFillMode: 'both' }}>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-montserrat">
@@ -28,6 +39,17 @@ export default function Hero() {
             Réserver maintenant
           </a>
         </Button>
+      </div>
+      <div className="absolute bottom-4 right-4 z-20 flex items-center space-x-2">
+        <Switch 
+          id="video-toggle" 
+          checked={videoEnabled}
+          onCheckedChange={setVideoEnabled}
+          aria-label="Activer ou désactiver la vidéo"
+        />
+        <Label htmlFor="video-toggle" className="text-white text-sm cursor-pointer">
+          Vidéo
+        </Label>
       </div>
     </section>
   );
