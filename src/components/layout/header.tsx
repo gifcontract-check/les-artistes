@@ -59,7 +59,7 @@ export default function Header() {
           <NavContent />
         </nav>
         <div className="flex items-center gap-2">
-          <Button asChild className={cn(hasScrolled ? "" : "bg-white text-primary hover:bg-white/90")}>
+          <Button asChild className={cn("dark:bg-primary dark:text-primary-foreground dark:hover:bg-primary/90", hasScrolled ? "" : "bg-white text-primary hover:bg-white/90")}>
             <a href="https://www.planity.com/les-artistes-59000-lille" target="_blank" rel="noopener noreferrer">
               Réserver
             </a>
